@@ -1,2 +1,3 @@
 # --codo-22549-frontend-2c
-segundo intento
+repo de frontend del segundo cuatri
+# cambio desde la web
