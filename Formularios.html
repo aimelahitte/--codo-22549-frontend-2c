@@ -6,21 +6,25 @@
 
     <body>
         <h1>Formulario 1</h1>
-        <form>
+        <form action="registrar-formulario.html"
+            method="POST">
             <label>Nombre:</label>
             <input type="text" 
                 maxlength="10"
-                size="10">
+                size="10"
+                name="nombre">
             <label>Password</label>
             <input type="password"
                 maxlength="4"
-                size="4">
+                size="4"
+                name="password">
             <input type="submit" 
             value="Enviar">
         </form>         
 
         <h2>Formulario 2</h2>
-        <form>
+        <form action="registrar-formulario.html"
+            method="GET">
             <input type="checkbox" value="MUSICA">
             <label>Opcion1:</label>
             <input type="checkbox" value="SERIES">
@@ -36,7 +40,42 @@
                 name="Opciones">
             <!--para que radio nos deje elegir solo una de las opciones
             (osea o una u otra) tenemos que darle el mismo nombre al atributo name-->
-        </form>   
+            <input type="submit" 
+            value="Enviar">        
+        </form> 
+        
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        Nombre:
+                    </td>
+                    <td>
+                        <input name="nombre" 
+                            type="text">
+                    </td>
+                    <td>
+                        Fecha nac:
+                    </td>
+                    <td>
+                        <input name="nombre"
+                        type="date"
+                        min="2022-08-16"
+                        max="2022-08-18">
+                    </td>
+                    <td>
+                        Edad:
+                    </td>
+                    <td>
+                        <input name="nombre" 
+                            type="number" 
+                            min="1" 
+                            max="150"
+                            step="2">
+                    </td>
+                </tr>
+            </table>
+        </form>
         <hr>
         <a href="index.html">
             Volver a Index
