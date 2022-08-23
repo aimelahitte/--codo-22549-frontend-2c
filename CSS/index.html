@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--formas de usar CSS-->
+    <style>
+        /*asi hacemos un comentario en CSS*/
+
+        p {
+            color:green
+        }
+        h1 {
+            color:red;
+            font-size: 50mp;
+        }
+
+        /*estructura CSS
+
+        selector {
+            propiedad: valor
+        }
+        
+        */
+
+        p {
+            font-weight: bolder;
+        }
+        section {
+            background-color: yellow;
+        }
+        #btn {
+            background-color: aqua
+        }
+    </style>
+
+    <!-- 3er forma: EXTERNO 
+    con la etiqueta LINK -->
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <!-- aplicar estilos en linea
+        usando el atributo style -->
+        <section class="sectionprincipal">
+            <h1 style="color:rgb(184, 65, 223)">CSS</h1>
+            <h2 style="color:blue">Sub título</h2>
+            <h1>HOLA</h1>
+            <h3>soy un subtitulo h3</h3>
+            
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates suscipit alias impedit totam quibusdam architecto, repudiandae quisquam magni dicta adipisci eius in veritatis at, officiis maxime? Cupiditate eveniet quibusdam inventore!
+            </p>
+        </section>
+
+        <section style="background-color: rgb(79, 211, 121)">
+            <h1>hola de nuevo</h1>
+
+        </section>
+
+        <section>
+            <form action="alta.html">
+                <label for="nombre">Nombre:</label>
+                <input id="nombre"
+                    name="nombre"
+                    type="text" 
+                    maxlength="50"
+                    required>
+                    <button id="btn" style="background-color: aqua">
+                        Enviar
+                    </button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
