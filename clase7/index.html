@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        /* atributo */
+        /* tiene que ser exacto */
+        [id="idJS"] {
+            color: blue;
+            text-transform:uppercase;
+        }
+
+        /* que contega "ss" */
+        [id*="ss"] {
+            color:green
+        }
+
+        /* que inicie con "ht" */
+        [id^="ht"] {
+            font-style: italic;
+        }
+
+        /* que termine con "Java"*/
+        [id$="Java"] {
+            text-transform: lowercase;
+        }
+        [atr="atrvalor"] {
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="html" 
+            style="background-color:yellowgreen" 
+            id="htmlId">
+                <h2>HTML</h2>
+                <p>Texto de primer div</p>
+        </section>
+        <section class="css" id="cssid" atr="atrvalor">
+            <h3>CSS</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, soluta. Cupiditate commodi, id, quasi sint, modi nam quisquam laudantium iste iure ex consequuntur itaque tempore alias explicabo et accusamus dolorum!</p>
+        </section>
+        <section id="idJS">
+            <h4>JS</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur incidunt ab consectetur explicabo eveniet totam eaque architecto voluptatum ea officiis minus nobis doloremque voluptates atque necessitatibus velit dolore, facere deserunt.</p>
+        </section>
+        <section id="idJava">
+            <h5>Java</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel reprehenderit atque quisquam cumque eius debitis est accusamus officia, omnis molestias, laborum facilis aliquid doloremque nam adipisci in blanditiis temporibus. Quasi!</p>
+        </section>
+    </main>
+</body>
+</html>
