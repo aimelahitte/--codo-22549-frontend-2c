@@ -1,0 +1,53 @@
+/*selector de etiquetas*/
+p{
+    font-size: 20px;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Lato', sans-serif; */
+}
+
+/* 
+body{
+    background-color: red;
+} 
+*/
+
+/* quiero que todos tengan 
+la misma familia de fuente 
+pongo el selector universal *(asterisco)
+*/
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+/* herencia */
+
+section {
+    background-color:aqua;
+}
+.html {
+    background-color:aquamarine;
+}
+
+main section.html {
+    background-color: brown !important;
+}
+
+#htmlId {
+    background-color: blueviolet;
+    width: 300px;
+    height: 125px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* especificidad */
+
+/*
+1 - !important
+2 - inline
+    ID
+3 - class
+4 - etiqueta
+*/
