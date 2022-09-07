@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body > p {
+            color: red;
+        }
+
+        body > div > p {
+            color: aquamarine;
+        }
+        section > h1 ~ p {
+            color: green;
+        }
+        /* especificidad, herencia */
+        section ol li:first-child {
+            color: blue !important
+        }
+
+        section ol li:last-child {
+            color: blue !important
+        }
+
+        section ol li:nth-child(odd) {
+            color:orange
+        }
+
+        ul li:nth-child(5n) {
+            color: violet;
+        }
+
+        table {
+            border: 1px solid red;
+            border-spacing: 0px;
+            width: 500px;
+            padding: 5px;
+        }
+
+        table tr {
+            text-align: center;
+            height: 50px;
+            padding: 15px;
+        }
+
+        table tr:first-child {
+            text-transform: uppercase;
+            background-color: aqua;
+        }
+
+        table tr:nth-child(2n+3) {
+            background-color: tomato;
+        }
+
+        
+        table tr:nth-child(2n) {
+            background-color: greenyellow;
+        }
+
+        table tr:hover {
+            font-size: 1.2cm;
+            font-weight: bolder;
+            color: seashell;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- hermanos -->
+    <p>carlos</p>
+    <p>hernan</p>
+
+    <!-- p es hijo de div -->
+    <div>
+        <p>
+            texto
+        </p>
+    </div>
+
+
+    <!-- hermanos -->
+    <section>
+        <h1>LOS HERMANOS</h1>
+        <p>carlos</p><!--hermanos adyacente de h1-->
+        <p>hernan</p><!--hermano general-->
+        <p>jose</p>
+        <p>pedro</p><!--ultimo hermano-->
+    </section>
+
+    <section>
+        <ol>
+            <li>h1</li><!--fist-child-->
+            <li>h2</li><!--nth-child(even)-->
+            <li>h3</li>
+            <li>h4</li>
+            <li>h5</li><!--last-child-->
+        </ol>   
+        
+        <ul>
+            <li>h1</li>
+            <li>h2</li>
+            <li>h3</li>
+            <li>h4</li>
+            <li>h5</li>
+            <li>h6</li>
+            <li>h7</li>     
+            <li>h8</li>
+            <li>h9</li>          
+        </ul>   
+
+        <table>
+            <tr>
+                <th>
+                    col1
+                </th>
+                <th>
+                    col2
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    f1 col1
+                </td>
+                <td>
+                    f1 col2
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    f2 col1
+                </td>
+                <td>
+                    f2 col2
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    f3 col1
+                </td>
+                <td>
+                    f3 col2
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    f4 col1
+                </td>
+                <td>
+                    f4 col2
+                </td>
+            </tr>
+        </table>
+    </section>
+
+</body>
+</html>
