@@ -1,0 +1,118 @@
+/* PRIMERO - NAVBAR */
+nav img {
+    margin-left: 10px;
+}
+
+.nav-item {
+    width: max-content
+}
+
+#verde {
+    color: rgb(6, 168, 6) !important;
+}
+
+
+/* SEGUNDO - CONTAINER FLUID */
+.flex-container {
+    display: flex;
+    background: rgba(0, 0, 0, 0.7) url('../img/ba1.jpg');
+    background-blend-mode: darken;
+    filter: brightness(150%);
+    /*background-image: url(../img/ba1.jpg);*/
+    background-size: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    height: 800px;
+}
+
+.flex-container div {
+    margin-right: 100px;
+    text-align: end;
+    color: white;
+    font-weight: 350;
+}
+
+
+.flex-container button {                
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    font-weight: 350;
+}
+
+/* TERCERO - TRES CARDS */
+.title {
+    text-align: center;
+}
+
+.title p {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.title h3 {
+    font-weight: bolder;
+}
+
+.card-group {
+    justify-content: center;
+}
+
+.card-group div{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* CUARTO - DOS CARDS (HAWAI)*/
+
+#btn3 {                
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    font-weight: 500;
+}
+
+
+/* QUINTO - FORMULARIO */
+
+.title2 {
+    text-align: center;
+}
+
+.title2 a {
+    border-bottom: 2px dotted;
+    text-decoration: none;
+    color: black;
+}
+.formu {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#form-footer {
+    font-size: small;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+#btn4 {
+    background-color: rgb(49, 206, 49);
+    border: none;
+    margin-bottom: 20px;
+}
+
+/* SEXTO - FOOT NAV*/
+#foot-nav {
+    background-color: #14406c;
+    height: 90px;
+    flex-wrap: wrap;
+}
+
+#foot-nav a {
+    color: white;
+}
+
+#foot-nav li {
+    display: flex;
+    align-items: center;
+}
