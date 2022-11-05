@@ -1,0 +1,51 @@
+/* NAVBAR */
+nav img {
+    margin-left: 10px;
+}
+
+.nav-item {
+    width: max-content
+}
+
+#verde {
+    color: rgb(6, 168, 6) !important;
+}
+
+/* CARDS */
+.body {
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+/* FORMU */
+#total {
+    color: #14406c;
+}
+
+button {
+    background-color: rgb(49, 195, 20) !important;
+    border-color: white !important;
+    margin-bottom: 7px;
+}
+
+/* VENTA */
+.venta {
+    text-align: center;
+}
+
+/* FOOT NAV */
+#foot-nav {
+    background-color: #14406c;
+    height: 90px;
+    flex-wrap: wrap;
+}
+
+#foot-nav a {
+    color: white;
+}
+
+#foot-nav li {
+    display: flex;
+    align-items: center;
+}
